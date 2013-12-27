@@ -1,0 +1,21 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+$body-bg:                       #34495e;
+$font-family-sans-serif:        'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$navbar-height:                 45px;
+$navbar-default-bg:             #e74c3c;
+$navbar-default-brand-color:    white;
+$navbar-default-link-color:		white;
+$brand-primary:                 #e74c3c;
+$jumbotron-bg:                  white;
+
+
+@import 'bootstrap';
+
+.center {
+     text-align: center;
+}
+
+.navbar-brand {
+     font-weight: bold;
+}
