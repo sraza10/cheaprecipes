@@ -1,7 +1,14 @@
-<div class="jumbotron">
-	<div style="margin: auto; text-align: center;">
-	<h1>Sign up or log in</h1>
-	<p><%= link_to "Log in", "#", class: "btn btn-primary btn-lg" %></p>
-	<p><%= link_to "Sign up", "#", class: "btn btn-primary btn-lg" %></p>
-	</div>
+<div class="jumbotron center">
+	
+		<% if user_signed_in? %>
+
+			# do something
+
+		<% else %>
+
+		<h1>Sign up or log in</h1>
+		<p><%= link_to "Log in", "#{}", class: "btn btn-primary btn-lg" %></p>
+		<p><%= link_to "Sign up", new_user_registration_path, class: "btn btn-primary btn-lg" %></p>
+	<% end %>
+	
 </div>
